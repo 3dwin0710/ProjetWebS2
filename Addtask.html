@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<style type="text/css">
+	.colorplus{
+	
+		color: mediumaquamarine;
+
+	}
+	.colored{
+		color: red;
+	
+	}
+
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+
+	}
+	
+	body{
+		display: flex;
+		justify-content: center;
+		background-image:radial-gradient(75% 75% at 50% 50%, #00FFFFFF 0%, #073AFFFF 100%);
+		background-size: 100% 100%;
+		
+	}
+	.container table{
+		width: 100%;
+		margin: 7rem auto;
+		border-collapse: collapse;
+	}
+	
+
+	 .tchid{
+		text-align: center;
+		width: 60px;
+	}
+
+	.input{
+		text-align: left;
+		width: 200px;
+		height: 50px;
+	}
+
+	.describe{
+
+		width: 100%;
+
+	}
+
+	#Priority{
+	
+		text-align: center;
+	}
+
+	.container table{
+		width: 100%;
+		margin: 7rem auto;
+		border-collapse: collapse;
+	}
+	th{
+		background: goldenrod;
+	}
+
+
+	.btnch1{
+		color: inherit;
+	text-decoration: none;
+	font-weight: bolder;
+	}
+
+	
+
+	</style>
+
+<body>
+
+	<form class="update" action="Addtask.php" method="post">
+	<div class="container">
+	
+
+
+	   <table border="2">
+		<tr>
+			
+			<th>Priority</th>
+			<th>Task name </th>
+			<th>Description</th>
+			<th>Date</th>
+			<th>Status</th>
+			<th width="50" >Add</th>
+		
+	
+			
+		</tr>
+
+					
+		<tr>
+					
+					<td><select name="Priority" id="Priority">
+						<option value="1">1 - Urgent </option>
+						<option value="2">2 - A Faire</option>
+						<option value="3">3 - En attente</option>
+					</select>
+					</td>
+					<td><input type="text" name="Name" value=""  ></input></td>
+					<td><input type="text" name="Description" class="describe" value="" width="200px" ></input></td>
+					<td><input type="text" name="Date"  value="" readonly></input></td>			
+					<td><select name="Status" id="Priority">
+						<option value="1">1 - To do </option>
+						<option value="2">2 - Doing</option>
+						<option value="3">3 - Done</option>
+					</select></td>	 
+	
+
+				
+
+					<td>
+						<button class = "btn_change" name ="btnch1" > AddTask</button>
+
+
+					</td>
+
+
+
+					</tr>
+
+
+
+
+
+	</table>
+		</div>
+
+</form>
+
+
+</body>
+</html>
